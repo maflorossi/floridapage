@@ -59,14 +59,19 @@ a:link {
 /*body*/
 body {
 background-color: #e9e7ec;
+background-color: #ee6c4d;
+margin: 0px;
+padding: 0px;
 }
 
 
+ 
 /*nav*/
 
 .navbar { 
     flex-direction: row;
     gap: 20px;
+    margin: 0%;
     display: block;
     list-style-type: none;
 background-color:  #011638;
@@ -80,7 +85,7 @@ background-color:  #011638;
     font-family: 'Ubuntu';
     color: #011638;
     margin-top: 5px;
-    border-style: inset;
+    border-style: groove;
     
 }
 
@@ -109,14 +114,16 @@ background-color:  #011638;
 	border-style: inset;
 }
 
+
 .trabajos{
     background-color:#ee6c4d;
     text-align: center;
     padding: 100px;
-    margin: 20px;
+    margin: 0px;
 }
 
 .news {
+    background-color: #e9e7ec;
     display: flex;
     justify-content: center;
 	width: 100%;
@@ -130,6 +137,8 @@ background-color:  #011638;
     padding: 170px;
     margin: 40px;
     border: 10px;
+    border-style: dashed;
+ 
 }
 
 .box2{
@@ -264,7 +273,7 @@ width: 70%;
 .somos{
 background-color: #ee6c4d;
 margin-left: 20px;
-margin-top: 30px;
+margin-top: 150px;
 margin-right: 50%;
 }
 
@@ -277,3 +286,52 @@ border: 20px;
 margin-bottom: 90px;
 }
 
+/*carrusel pagina inicio*/
+
+#carrusel {
+    float:center;
+    width:500px;
+    overflow:hidden;
+    height: 300px;
+    position:center;
+    margin-top:20px;
+    margin-bottom:20px;
+    margin-left: 20px;
+}
+ 
+#carrusel .left-arrow {
+    position: absolute;
+    left: 5px;
+    z-index: 3;
+    top: 40%;
+
+}
+ 
+#carrusel .right-arrow {
+    position:absolute;
+    right:1px;
+    z-index:1;
+    top:50%;
+
+}
+ 
+.carrusel {
+    width:4000px;
+    left:0px;
+    position:absolute;
+    z-index:0;
+    margin-left: 80px;
+    scroll-snap-type: both;
+}
+ 
+.carrusel>div {
+    float: left;
+    height: 200px;
+    margin-right: 2px;
+    width:300px;
+}
+ 
+.carrusel img {
+    cursor:pointer;
+}
+ 
